@@ -1,11 +1,10 @@
-﻿using Game.Abstract;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Game.Entities
+namespace Game.Abstract
 {
-    public class Game : IGame
+    interface IGame
     {
         public int GameId { get; set; }
         public string GameName { get; set; }

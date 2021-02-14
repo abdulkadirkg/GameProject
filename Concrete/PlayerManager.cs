@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Game.Concrete
 {
-    public class PlayerManager : IPlayer
+    public class PlayerManager : IPlayerManager
     {
         readonly List<Player> list = new List<Player>();
         private ICheckService _checkService;

@@ -81,7 +81,29 @@ namespace Game
             {
                 Console.WriteLine(list[i].PlayerName + " IS IN LIST");
             }
-            
+
+            Console.WriteLine("\n------------GAME SALE-----------\n");
+
+            Entities.Game game = new Entities.Game();
+            game.GameId = 1;
+            game.GameName = "Counter Strike";
+            game.GamePrice = 25.00;
+
+
+            SaleManager saleManager = new SaleManager();
+            saleManager.Sale(game, player);
+
+            Console.WriteLine("\n------------CAMPAIGN------------\n");
+            Campaign campaign = new Campaign {
+                CampaignId = 1,
+                CampaignName = "Bayram İndirimi",
+                CampaignDiscountRate = 10,
+                CampaignInfo = "Kurban bayramına özel oyunlarda %10 indirim"
+            };
+            CampaignManager campaignManager = new CampaignManager();
+            campaignManager.Add(campaign);
+            Console.WriteLine("\n------SALE DISCOUNTED GAME------\n");
+            saleManager.Sale(game, player2,campaign);
         }
     }
 }

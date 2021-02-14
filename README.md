@@ -3,7 +3,7 @@ Game Project
 
 Used Interfaces,
 
-It checks Players to add from E-Devlet and our own check service.
+It checks Players to add from E-Devlet and from our own check service.
 
 Added Campaign and Sale
 

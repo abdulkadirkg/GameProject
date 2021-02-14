@@ -8,6 +8,7 @@ It checks Players to add from E-Devlet and our own check service.
 Added Campaign and Sale
 
 <code>
+  
 [============PROGRAM.CS OUTPUT============]
 
 --------------ADD---------------
@@ -60,4 +61,5 @@ Bayram İndirimi Added
 Uygulanan İndirim: Bayram İndirimi
 Kurban bayramına özel oyunlarda %10 indirim
 Jim Oyuncusu Counter Strike Oyununu 22,5 TL'ye Satın Aldı.
+
 </code>

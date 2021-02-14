@@ -22,7 +22,7 @@ Kendi Servisimiz'den Doğrulanıyor...
 DOĞRULAMA BAŞARILI
 Durali Added
 
-------BEFORE UPDATE GET ALL-----
+------BEFORE UPDATE, GET ALL-----
 // OUR LIST IS;
 Abdulkadir IS IN LIST
 Jeam IS IN LIST
@@ -32,7 +32,7 @@ Durali IS IN LIST
 // UPDATE RESULT;
 Jeam Updated to Jim
 
-------AFTER UPDATE GET ALL------
+------AFTER UPDATE, GET ALL------
 // OUR LIST AFTER UPDATE IS;
 Abdulkadir IS IN LIST
 Jim IS IN LIST
@@ -42,12 +42,12 @@ Durali IS IN LIST
 // DELETE RESULT;
 Jim Deleted
 
-------AFTER DELETE GET ALL------
+------AFTER DELETE, GET ALL------
 // OUR LIST AFTER DELETE IS;
 Abdulkadir IS IN LIST
 Durali IS IN LIST
 
-------------GAME SALE-----------
+------------SALE GAME-----------
 // SALE GAME WITHOUT CAMPAIGN;
 Abdulkadir Oyuncusu Counter Strike Oyununu 25 TL'ye Satın Aldı.
 
@@ -55,7 +55,7 @@ Abdulkadir Oyuncusu Counter Strike Oyununu 25 TL'ye Satın Aldı.
 // SET CAMPAIGN;
 Bayram İndirimi Added
 
-------SALE DISCOUNTED GAME------
+------DISCOUNTED GAME SALE------
 // SALE GAME WITH BAYRAM INDIRIMI CAMPAIGN;
 Uygulanan İndirim: Bayram İndirimi
 Kurban bayramına özel oyunlarda %10 indirim

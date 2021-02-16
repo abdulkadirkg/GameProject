@@ -7,6 +7,6 @@ namespace Game.Abstract
 {
     public interface ICheckService
     {
-        bool CheckPlayer(Player player);
+        bool CheckPlayer(IPlayer player);
     }
 }

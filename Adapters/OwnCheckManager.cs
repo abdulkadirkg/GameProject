@@ -8,7 +8,7 @@ namespace Game.Concrete
 {
     public class OwnCheckManager : ICheckService
     {
-        public bool CheckPlayer(Player player)
+        public bool CheckPlayer(IPlayer player)
         {
             Console.WriteLine("Kendi Servisimiz'den Doğrulanıyor...");
             Console.WriteLine("DOĞRULAMA BAŞARILI");

@@ -8,7 +8,7 @@ namespace Game.Concrete
 {
     public class PlayerManager : IPlayerManager
     {
-        readonly List<Player> list = new List<Player>();
+        readonly List<IPlayer> list = new List<IPlayer>();
         private ICheckService _checkService;
         private List<ICheckService> _checkServices;
         public PlayerManager(ICheckService checkService)
@@ -21,7 +21,7 @@ namespace Game.Concrete
             _checkServices = checkServices;
         }
 
-        public void Add(Player player)
+        public void Add(IPlayer player)
         {
             for (int i = 0; i < _checkServices.Count; i++)
             {
@@ -40,22 +40,22 @@ namespace Game.Concrete
                 
         }
 
-        public void Delete(Player player)
+        public void Delete(IPlayer player)
         {
             list.Remove(player);
             Console.WriteLine(player.PlayerName + " Deleted");
         }
 
-        public void Update(ref Player oldData, Player newData)
+        public void Update(ref IPlayer oldData, IPlayer newData)
         {
-            Player data = oldData;
+            IPlayer data = oldData;
             int index = list.FindIndex(p => p.PlayerId == data.PlayerId);
             list[index] = newData;
             Console.WriteLine(oldData.PlayerName + " Updated to " + newData.PlayerName);
             oldData = newData;
         }
 
-        public List<Player> GetAll()
+        public List<IPlayer> GetAll()
         {
             return list;
         }

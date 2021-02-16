@@ -7,7 +7,7 @@ namespace Game.Abstract
 {
     interface ICampaignManager
     {
-        void Add(Campaign campaign);
-        string GetCampaignInfo(Campaign campaign);
+        void Add(ICampaign campaign);
+        string GetCampaignInfo(ICampaign campaign);
     }
 }

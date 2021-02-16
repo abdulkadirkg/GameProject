@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Game.Abstract
 {
-    interface IPlayer
+    public interface IPlayer
     {
         public int PlayerId { get; set; }
         public string PlayerTC { get; set; }

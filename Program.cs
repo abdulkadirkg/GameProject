@@ -11,20 +11,20 @@ namespace Game
     {
         static void Main(string[] args)
         {
-            Player player = new Player {
+            IPlayer player = new Player {
                 PlayerId = 1,
                 PlayerName = "Abdulkadir",
                 PlayerSurname = "KG",
                 PlayerTC = "1234567890"
             };
-            Player player2 = new Player
+            IPlayer player2 = new Player
             {
                 PlayerId = 2,
                 PlayerName = "Jeam",
                 PlayerSurname = "Carrey",
                 PlayerTC = "1234567892"
             };
-            Player player3 = new Player
+            IPlayer player3 = new Player
             {
                 PlayerId = 3,
                 PlayerName = "Durali",
@@ -45,7 +45,7 @@ namespace Game
 
             Console.WriteLine("\n------BEFORE UPDATE GET ALL-----\n");
 
-            List<Player> list; ;
+            List<IPlayer> list; ;
             list = playerManager.GetAll();
             for (int i = 0; i < list.Count; i++)
             {
@@ -54,7 +54,7 @@ namespace Game
 
             Console.WriteLine("\n-------------UPDATE-------------\n");
 
-            Player newData = new Player {
+            IPlayer newData = new Player {
                 PlayerId = 2,
                 PlayerName = "Jim",
                 PlayerSurname = "Carrey",

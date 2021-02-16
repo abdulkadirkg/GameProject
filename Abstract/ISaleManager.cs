@@ -7,6 +7,6 @@ namespace Game.Abstract
 {
     public interface ISaleManager
     {
-        public void Sale(Entities.Game game, Player player, ICampaign campaign = null);
+        public void Sale(IGame game, IPlayer player, ICampaign campaign = null);
     }
 }

@@ -8,13 +8,13 @@ namespace Game.Concrete
 {
     public class SaleManager : ISaleManager
     {
-        private Campaign _campaign;
-        public SaleManager(Campaign campaign = null)
+        private ICampaign _campaign;
+        public SaleManager(ICampaign campaign = null)
         {
             _campaign = campaign;
         }
 
-        public void Sale(Entities.Game game, Player player, ICampaign campaign = null)
+        public void Sale(IGame game, IPlayer player, ICampaign campaign = null)
         {
             if (campaign != null)
             {

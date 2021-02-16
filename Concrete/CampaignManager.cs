@@ -8,20 +8,20 @@ namespace Game.Concrete
 {
     public class CampaignManager : ICampaignManager
     {
-        List<Campaign> campaignList = new List<Campaign>();
+        List<ICampaign> campaignList = new List<ICampaign>();
 
-        public void Add(Campaign campaign)
+        public void Add(ICampaign campaign)
         {
             campaignList.Add(campaign);
             Console.WriteLine(campaign.CampaignName + " Added");
         }
 
-        public List<Campaign> GetAll()
+        public List<ICampaign> GetAll()
         {
             return campaignList;
         }
 
-        public string GetCampaignInfo(Campaign campaign)
+        public string GetCampaignInfo(ICampaign campaign)
         {
             return campaign.CampaignInfo;
         }

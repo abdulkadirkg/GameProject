@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Game.Abstract
 {
-    interface IGame
+    public interface IGame
     {
         public int GameId { get; set; }
         public string GameName { get; set; }

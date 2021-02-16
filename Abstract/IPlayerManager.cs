@@ -7,8 +7,8 @@ namespace Game.Abstract
 {
     public interface IPlayerManager
     {
-        void Add(Player player);
-        void Update(ref Player oldData, Player newData);
-        void Delete(Player player);
+        void Add(IPlayer player);
+        void Update(ref IPlayer oldData, IPlayer newData);
+        void Delete(IPlayer player);
     }
 }

@@ -2,6 +2,7 @@
 using Game.Entities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Game.Concrete
@@ -42,7 +43,8 @@ namespace Game.Concrete
 
         public void Delete(IPlayer player)
         {
-            list.Remove(player);
+            list.Remove(list.SingleOrDefault(p => p.PlayerId == player.PlayerId));
+            //list.Remove(player); // BU KOD CLASS REFERANS İLE ÇALIŞTIĞI İÇİN DOĞRU ÇALIŞMAZ
             Console.WriteLine(player.PlayerName + " Deleted");
         }
 
